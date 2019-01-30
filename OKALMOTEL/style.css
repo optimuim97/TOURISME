@@ -1,0 +1,222 @@
+body p{
+  font-size : 13px;
+  color : #777;
+}
+
+
+
+*{z-index :200;
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat",sans-serif;
+}
+.header{
+  height: 100px;
+  background-color : #ff7a00;
+  padding: 0 20px;
+  color: #fff;
+}
+.logo{
+  line-height: 100px;
+  float: left;
+  text-transform: uppercase;
+  font-size : 37px;
+  font-family: 'Macondo', cursive;
+ letter-spacing: 1.5px;
+  text-shadow: 7px 9px 30px;
+}
+
+
+.logo::first-letter{
+  color: green;
+}
+
+.menu{
+  float: right;
+  line-height: 100px;
+}
+.menu a{
+  font-family: 'Alegreya Sans SC', sans-serif;
+  color:#fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0 10px;
+  transition: 0.4s;
+}
+.show-menu-btn,.hide-menu-btn{
+  transition: 0.4s;
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+  z-index : 2000;
+}
+.show-menu-btn{
+  float: right;
+}
+.show-menu-btn i{
+  line-height: 100px;
+}
+.menu a:hover{
+   border-bottom : 3px solid green;
+  color : green;
+
+}
+.show-menu-btn:hover,
+.hide-menu-btn:hover{
+  color : green;
+
+}
+
+#chk{
+  position: absolute;
+  visibility: hidden;
+  z-index: -1111;
+}
+
+#main-image{
+  height : 300px;
+  background : url('hotel.jpg') center;
+  box-shadow : 2px 3px 9px;
+}
+
+
+
+#main-image h2{
+  padding-top : 90px;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-size : 30px;
+  color : #fff;
+  text-align : center;
+  font-weight: bold;
+  text-shadow: 7px 7px 10px;
+}
+
+
+
+.servivce items-article{
+  height : 100px;
+  background-color : blue;
+}
+/*.bouton01{
+  text-align: center;
+  background-color: green;
+  border-radius : 5px;
+  text-decoration: none;
+  color:#fff;
+}
+.bouton01:hover{
+  color : green;
+  background-color: #777;
+}*/
+
+
+@media screen and (max-width:800px) {
+  .show-menu-btn,.hide-menu-btn{
+    display: block;
+  }
+  .menu{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #333;
+    right: -100%;
+    top: 0;
+    text-align: center;
+    padding: 80px 0;
+    line-height: normal;
+    transition: 0.7s;
+  }
+  .menu a{
+    display: block;
+    padding: 20px;
+  }
+  .hide-menu-btn{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+  }
+  #chk:checked ~ .menu{
+    right: 0;
+  }
+}
+
+
+/*Partie 3*/
+
+
+.about article{
+  margin-top: 20px;
+}
+
+
+.separator hr{
+   margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(255, 0, 0, 0.1);
+  }
+
+#about{
+  margin-top : 200px;
+  text-align : center;
+  margin-top: 12px;
+  font-size : 27px;
+  color : #555;
+  padding-top : 40px;
+  padding-bottom: 15px;
+
+}
+.about h3{
+  text-align : center;
+  color : #444;
+  font-size : 22px;
+}
+article h3 p{
+  text-align: center;
+  color:red;
+}
+
+
+.btn-custom{
+  background-color : green;
+  color : white;
+}
+.btn-custom:hover{
+  background-color: #777;
+  color : green;
+}
+
+h4{
+  margin-top: 50px;
+  text-align : center;
+  color : #444;
+  font-size : 27px;
+}
+
+h5{
+  color : #62f442;
+}
+.service .elt{
+  background-color : ;
+}
+ .carousel-inner img {
+      width: 100%;
+      height: 100%;
+  }
+h5{
+color : black;
+font-weight : bold;
+font-size : 25px;
+}
+
+footer{
+  height : 120px;
+  background-color : #efefef;
+}
+footer p{
+  text-align : center;
+  padding-top : 15px;
+}
+
+
+
